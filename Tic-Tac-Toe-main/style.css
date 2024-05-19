@@ -1,0 +1,91 @@
+body{
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6d4d4;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: 400ms;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    background-color: aliceblue;
+}
+.row2{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.screen{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 150px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.result{
+    transform: scale(0);
+}
+.result1{
+    position: absolute;
+    animation-name:showresult ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    transform: scale(0);
+
+
+}
+@keyframes showresult{
+    from {
+        opacity: 0%;
+        transform: scale(0);
+    }
+    to{
+        opacity: 100%;
+        transform: scale(4) ;
+        font-weight: 700;
+        /* background-color: #c93333; */
+    }
+}
+.box2{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.reset{
+    cursor: pointer;
+    padding: 5px;
+    width: 30%;
+    transition: 300ms;
+}
+.reset:hover{
+    background-color: green;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    /* display: none; */
+    
+}
+.hell{
+    display: none;
+}
+.box5,.box8{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
